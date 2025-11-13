@@ -32,6 +32,7 @@ class UserService:
         else:
             return True
 
+    
     async def create_user(self, user_data: UserCreateModel, session: AsyncSession):
         user_data_dict = user_data.model_dump()
         new_user = UserCreateModel(**user_data_dict)
@@ -39,3 +40,5 @@ class UserService:
         await session.add(new_user)
         await session.commit()
         return new_user
+    
+    

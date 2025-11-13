@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
 from db.main import init_db
+from routers.auth_router import auth_router 
+from routers.book_router import book_router
+
 
 version = "v1"
 
