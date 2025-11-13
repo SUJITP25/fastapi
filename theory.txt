@@ -1,0 +1,2 @@
+What is FastAPI? 
+APIs are mechanism that enebles two software componensts-such as the frontend and backend of an application- to comminicate with each other using a defined set of rules.
