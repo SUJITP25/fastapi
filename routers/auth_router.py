@@ -8,6 +8,7 @@ from models.user_model import User
 from utils.utils import cerate_access_token, decode_token, verify_password
 from datetime import datetime, timedelta
 
+
 auth_router = APIRouter()
 user_service = UserService()
 
